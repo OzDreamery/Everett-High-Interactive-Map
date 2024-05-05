@@ -1,0 +1,343 @@
+<html>
+<header id="header_main" class="site-header1a site-header " aria-label="Main Site Header">
+  {% load static %}
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+          integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+          crossorigin=""></script>
+  <link rel="stylesheet" type="text/css" href="{% static 'css/EHS.css' %}">
+
+<a class="skip-to-content-link" href="#content_main">Skip to main content</a>
+  <div class="school-name header-title">
+    <a href="/">
+      <div class="school-name-inner">
+        <span class="first-line"><span class="bolder-line">Everett</span> Public Schools</span>
+      </div>
+    </a>
+  </div>
+
+  <nav id="sitenav_main" class="sitenav sitenav-main nav-group column" aria-label="Main Site Navigation" role="navigation">
+    <button id="sitenav_main_mobile_toggle" class="nav-mobile-toggle accessible-megamenu-toggle animated" aria-expanded="false" aria-pressed="false" aria-controls="accessible-megamenu-1709227457283-1"><span class="nav-mobile-toggle-inner">Main Menu Toggle</span></button>
+    <ul class="nav-menu accessible-megamenu js-accessible-megamenu" id="accessible-megamenu-1709227457283-1">
+
+        <li class="nav-item accessible-megamenu-top-nav-item">
+          <a href="javascript:;" id="accessible-megamenu-1709227457286-2" role="button" aria-controls="accessible-megamenu-1709227457286-3" aria-expanded="false" tabindex="0" class=""><span class="nav-item-inner">Schools</span></a>
+
+
+
+        </li>
+
+        <li class="nav-item accessible-megamenu-top-nav-item">
+          <a href="javascript:;" id="accessible-megamenu-1709227457286-4" role="button" aria-controls="accessible-megamenu-1709227457287-5" aria-expanded="false" tabindex="0" class=""><span class="nav-item-inner">Parents</span></a>
+
+
+        <li class="nav-item accessible-megamenu-top-nav-item">
+          <a href="javascript:;" id="accessible-megamenu-1709227457288-6" role="button" aria-controls="accessible-megamenu-1709227457288-7" aria-expanded="false" tabindex="0" class=""><span class="nav-item-inner">District Updates</span></a>
+
+
+        </li>
+
+        <li class="nav-item accessible-megamenu-top-nav-item">
+          <a href="javascript:;" id="accessible-megamenu-1709227457288-8" role="button" aria-controls="accessible-megamenu-1709227457288-9" aria-expanded="false" tabindex="0" class=""><span class="nav-item-inner">Teachers &amp; Staff</span></a>
+
+
+        </li>
+
+        <li class="nav-item accessible-megamenu-top-nav-item">
+          <a href="javascript:;" id="accessible-megamenu-1709227457288-10" role="button" aria-controls="accessible-megamenu-1709227457288-11" aria-expanded="false" tabindex="0" class=""><span class="nav-item-inner">School Committee</span></a>
+
+
+        </li>
+
+        <li class="nav-item accessible-megamenu-top-nav-item">
+          <a href="javascript:;" id="accessible-megamenu-1709227457289-12" role="button" aria-controls="accessible-megamenu-1709227457289-13" aria-expanded="false" tabindex="0" class=""><span class="nav-item-inner">Departments</span></a>
+
+
+        </li>
+
+
+        <li class="nav-item accessible-megamenu-top-nav-item">
+          <a href="javascript:;" id="accessible-megamenu-1709227457289-14" role="button" aria-controls="accessible-megamenu-1709227457290-15" aria-expanded="false" tabindex="0" class=""><span class="nav-item-inner">School Map</span></a>
+
+
+      </li>
+    </ul>
+  </nav>
+
+  <nav id="topbar_nav" class="header-secondary-nav header-links" aria-labelledby="topbar_nav_header">
+
+    <div class="hidden" id="topbar_nav_header">Useful Links</div>
+    <ul class="links-list">
+
+
+  <li class="link-item item-name"><a>Gmail Login</a></li>
+
+  <li class="link-item item-name"><a>Parent Information Center</a></li>
+
+  <li class="link-item item-name"><a>School Contacts</a></li>
+
+    </ul>
+  </nav>
+
+  <a href="/login" class="edlio-login-link"><span class="edlio-logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 334.98 366.6"><path d="M334.77 247.52c-.63-4.94-5.66-7.44-10.28-6.85a11.59 11.59 0 00-8 5.43c-23.16 29.34-57.2 46.9-92.85 51.44-43.63 5.57-82.93-7.61-109.26-40.05-6.64-9.83-12.76-21-16.33-33.09-.31-2.48.85-3.88 3.5-4.21 40.32-5.15 142.69-29.55 181.19-48.92 24.25-10 30.9-31.58 28.61-49.51C307.5 92 285.64 67 252.41 54.71l15.81-27.57a10 10 0 00-12.12-13L153.99 43.36l-1.53-35.95A6.94 6.94 0 00140.64 2s-71.27 57.93-90.6 91.53L17.28 72.12A9.67 9.67 0 003.19 81.9s-9.76 66.22 4.85 146.51c13.48 74.06 70.35 110.76 70.35 110.76 29.25 21.26 68.12 31.35 112.25 26.03 65.45-8.37 125.8-51.26 144.15-112.64a14.41 14.41 0 00-.02-5.04zm-248.06-53.7c-.79-6.18-1.47-16.77-.94-23.12 2.52-29 16.31-54.89 42-67.64l13.4-5.12a87 87 0 0112.25-2.47c46.28-5.92 76 31.74 78.72 53.37 1.35 10.5-109.91 44.2-139.66 48-3.32.44-5.46-.55-5.77-3.02z"></path></svg>
+<span class="hidden">Edlio</span></span> Login</a>
+{% load static %}
+  <base target="_top">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Image Overlay Tutorial - Leaflet</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
+
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+      <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+      }
+      .leaflet-container {
+        height: 1000px;
+        width: 2000px;
+        max-width: 100%;
+        max-height: 100%;
+      }
+    </style>
+
+
+  </header>
+
+<body>
+
+<div id='map'></div>
+
+<script>
+  const map = L.map('map').setView([50.7105839, -34.7523184], 40);
+
+  const osm = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 16,
+                minZoom: 13.4,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+  }).addTo(map);
+
+  var imageUrl = '{% static '/images/two.png' %}';
+  const errorOverlayUrl = 'https://cdn-icons-png.flaticon.com/512/110/110686.png';
+  const altText = 'Floor 2';
+  const latLngBounds = L.latLngBounds([[55.7, -60.19999999], [55.753, -59.9499999]]);
+
+  const imageOverlay = L.imageOverlay(imageUrl, latLngBounds, {
+    opacity: 1,
+    errorOverlayUrl,
+    alt: altText,
+    interactive: true
+  }).addTo(map);
+  map.fitBounds(latLngBounds);
+
+L.Control.Button = L.Control.extend({
+    options: {
+        position: 'topleft'
+    },
+    onAdd: function (map) {
+        var container = L.DomUtil.create('div', 'leaflet-bar leaflet-control');
+        var button1 = L.DomUtil.create('a', 'leaflet-control-button', container);
+        var button2 = L.DomUtil.create('a', 'leaflet-control-button', container);
+        var button3 = L.DomUtil.create('a', 'leaflet-control-button', container);
+        var button4 = L.DomUtil.create('a', 'leaflet-control-button', container);
+        var button5 = L.DomUtil.create('a', 'leaflet-control-button', container);
+
+        button1.href = "/floor1";
+        button1.textContent = "1";
+        button2.href = "/floor2";
+        button2.textContent = "2";
+        button3.href = "/floor3";
+        button3.textContent = "3";
+        button4.href = "/floor4";
+        button4.textContent = "4";
+        button5.href = "/floor5";
+        button5.textContent = "5";
+
+      L.DomEvent.disableClickPropagation(container);
+
+      L.DomEvent.on(button1, 'click', function(){
+          button1.href;
+      });
+      L.DomEvent.on(button2, 'click', function(){
+          button2.href;
+      });
+      L.DomEvent.on(button3, 'click', function(){
+          button3.href;
+      });
+      L.DomEvent.on(button4, 'click', function(){
+          button4.href;
+      });
+      L.DomEvent.on(button5, 'click', function(){
+          button5.href; 
+      });
+
+        container.title = "Title";
+
+        return container;
+    },
+    onRemove: function(map) {},
+});
+
+var DAP1 = "{{ day_a_period_1|default_if_none:'1000' }}"
+var DAP2 = "{{ day_a_period_2|default_if_none:'1000' }}"
+var DAP3 = "{{ day_a_period_3|default_if_none:'1000' }}"
+var DAP4 = "{{ day_a_period_4|default_if_none:'1000' }}"
+
+var DBP1 = "{{ day_b_period_1|default_if_none:'1000' }}"
+var DBP2 = "{{ day_b_period_2|default_if_none:'1000' }}"
+var DBP3 = "{{ day_b_period_3|default_if_none:'1000' }}"
+var DBP4 = "{{ day_b_period_4|default_if_none:'1000' }}"
+
+'''
+var $2540 = L.marker([55.71328272252383, -59.98879683005819]).addTo(map);
+$2540.bindPopup("<b>2540</b><br>Andreotti, Christine");
+
+var $2480 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
+$2480.bindPopup("<b>2480</b><br>Appleby, Patrick");
+
+var $2430 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
+$2430.bindPopup("<b>2430</b><br>Bittermann, Sarah");
+
+var $2615 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
+$2615.bindPopup("<b>2615</b><br>Blake, Steven");
+
+var $2620 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
+$2620.bindPopup("<b>2620</b><br>Brown, Edward");
+
+var $2420 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
+$2420.bindPopup("<b>2420</b><br>Cheever, Corey");
+
+var $2700 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
+$2700.bindPopup("<b>2700</b><br>Clifford, Kayla");
+
+var $2280 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
+$2280.bindPopup("<b>2280</b><br>Reczek, Andrea");
+
+var $2300 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
+$2300.bindPopup("<b>2300</b><br>Redmond, Timothy");
+
+var $2720 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
+$2720.bindPopup("<b>2720</b><br>Seiders, Anna");
+
+var $2290 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
+$2290.bindPopup("<b>2290</b><br>Peach, David");
+
+var $2610 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
+$2610.bindPopup("<b>2610</b><br>Simmons, Sarah");
+
+var $2410 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
+$2410.bindPopup("<b>2410</b><br>Smith, Brendan");
+
+var $2280 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
+$2280.bindPopup("<b>2280</b><br>Soulouque, Sophonie");
+
+var $2480 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
+$2480.bindPopup("<b>2480</b><br>Toomajian, Kirk");
+
+var $2560 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
+$2560.bindPopup("<b>2560</b><br>Tran, Tuyet Julie");
+
+var $2450 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
+$2450.bindPopup("<b>2450</b><br>Lopes, Manuel");
+
+var $2400 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
+$2400.bindPopup("<b>2400</b><br>Maldonado, Monica");
+
+var $2510 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
+$2510.bindPopup("<b>2510</b><br>McDonald, Joseph");
+
+var $2600 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
+$2600.bindPopup("<b>2600</b><br>McDonough, Thomas<br>Gerace, Mary<br>Clifford, Michael");
+
+var $2550 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
+$2550.bindPopup("<b>2550</b><br>Messina, Michael");
+
+var $2590 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
+$2590.bindPopup("<b>2590</b><br>Morrissey, Sarah");
+
+var $2510 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
+$2510.bindPopup("<b>2510</b><br>Glaeser, John");
+
+var $2640 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
+$2640.bindPopup("<b>2640</b><br>Gould, Emily");
+
+var $2580 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
+$2580.bindPopup("<b>2580</b><br>Ingersoll, Catherine");
+
+var $2250 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
+$2250.bindPopup("<b>2250</b><br>Jones, Nicola");
+
+var $2410 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
+$2410.bindPopup("<b>2410</b><br>Klein, Brett");
+
+var $2610 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
+$2610.bindPopup("<b>2610</b><br>Korb, Emily");
+
+var $2540 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
+$2540.bindPopup("<b>2540</b><br>Korb, Emily");
+
+var $2710 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
+$2710.bindPopup("<b>2710</b><br>Kretas, Stephanie");
+
+var $2570 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
+$2570.bindPopup("<b>2570</b><br>LeGrow, Robert");
+
+var $2450 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
+$2450.bindPopup("<b>2450</b><br>Leite, Antonio");
+
+var $2300 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
+$2300.bindPopup("<b>2300</b><br>Constanza, Oswaldo");
+
+var $2210 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
+$2210.bindPopup("<b>2210</b><br>Cummings, Judith");
+
+var $2500 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
+$2500.bindPopup("<b>2500</b><br>Curtin, Adrian");
+
+var $2235 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
+$2235.bindPopup("<b>2235</b><br>Dinan, Kerri");
+
+var $2520 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
+$2520.bindPopup("<b>2520</b><br>Faison, Latisha");
+
+var $2700 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
+$2700.bindPopup("<b>2700</b><br>Fineran, Michael");
+
+var $2490 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
+$2490.bindPopup("<b>2490</b><br>Wright, Christopher");
+
+var $2540 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
+$2540.bindPopup("<b>2540</b><br>Wright, Nicole");
+  
+'''
+
+  var classesPeriod = [DAP1, DAP2, DAP3, DAP4, DBP1, DBP2, DBP3, DBP4];
+  function removeMarkers() {
+      for (var markerVar in window) {
+          if (markerVar.startsWith('$') && typeof window[markerVar] === 'object' && window[markerVar] instanceof L.Marker) {
+              var markerId = markerVar.substring(1); 
+              if (!classesPeriod.includes("$" + markerId)) {
+                  map.removeLayer(window[markerVar]); 
+              }
+          }
+      }
+  }
+  removeMarkers();
+
+var control = new L.Control.Button()
+control.addTo(map)
+
+  map.on('click', function(e) {
+      alert("Lat, Lon : " + e.latlng.lat + ", " + e.latlng.lng)
+  });
+
+</script>
+
+
+
+</body>
+</html>
