@@ -51,7 +51,7 @@
             margin-top: 20px;
         }
         .logout-button {
-            background-color: #dc3545; /* Red color */
+            background-color: #dc3545; 
             color: #fff;
             border: none;
             border-radius: 4px;
@@ -60,7 +60,7 @@
             transition: background-color 0.3s;
         }
         .logout-button:hover {
-            background-color: #c82333; /* Darker red on hover */
+            background-color: #c82333; 
         }
 
         @keyframes gradient-animation {
@@ -77,14 +77,6 @@
     </style>
 </head>
 <body>
-    <div class="logout-container">
-        <!-- Logout button -->
-        <form action="{% url 'school_map:logout' %}" method="post">
-            {% csrf_token %}
-            <button class="logout-button" type="submit">Logout</button>
-        </form>
-    </div>
-
     <div class="room-input-container">
         <h2>Room Input</h2>
         <form method="post">
@@ -122,6 +114,12 @@
                 <input type="number" name="day_b_period_4" value="{{ day_b_period_4|default_if_none:'1000' }}" required>
             </div>
             <button type="submit" class="submit-button">Save</button>
+        </form>
+    </div>
+    <div class="logout-container">
+        <form action="{% url 'school_map:logout' %}" method="post">
+            {% csrf_token %}
+            <button class="logout-button" type="submit">Logout</button>
         </form>
     </div>
 </body>

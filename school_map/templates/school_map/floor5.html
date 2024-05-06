@@ -1,112 +1,112 @@
-<html>
-<header id="header_main" class="site-header1a site-header " aria-label="Main Site Header">
+  <html>
+  <header id="header_main" class="site-header1a site-header " aria-label="Main Site Header">
+    {% load static %}
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+            crossorigin=""></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/EHS.css' %}">
+
+  <a class="skip-to-content-link" href="#content_main">Skip to main content</a>
+    <div class="school-name header-title">
+      <a>
+        <div class="school-name-inner">
+          <span class="first-line"><span class="bolder-line">Everett</span> Public Schools</span>
+        </div>
+      </a>
+    </div>
+
+    <nav id="sitenav_main" class="sitenav sitenav-main nav-group column" aria-label="Main Site Navigation" role="navigation">
+      <button id="sitenav_main_mobile_toggle" class="nav-mobile-toggle accessible-megamenu-toggle animated" aria-expanded="false" aria-pressed="false" aria-controls="accessible-megamenu-1709227457283-1"><span class="nav-mobile-toggle-inner">Main Menu Toggle</span></button>
+      <ul class="nav-menu accessible-megamenu js-accessible-megamenu" id="accessible-megamenu-1709227457283-1">
+
+          <li class="nav-item accessible-megamenu-top-nav-item">
+            <a href="https://eh.everettpublicschools.org/" id="accessible-megamenu-1709227457286-2" role="button" aria-controls="accessible-megamenu-1709227457286-3" aria-expanded="false" tabindex="0" class=""><span class="nav-item-inner">Schools</span></a>
+
+
+
+          </li>
+
+          <li class="nav-item accessible-megamenu-top-nav-item">
+            <a href="https://www.everettpublicschools.org/apps/pages/index.jsp?uREC_ID=1618393&type=d&pREC_ID=1833299" id="accessible-megamenu-1709227457286-4" role="button" aria-controls="accessible-megamenu-1709227457287-5" aria-expanded="false" tabindex="0" class=""><span class="nav-item-inner">Parents</span></a>
+
+
+          <li class="nav-item accessible-megamenu-top-nav-item">
+            <a href="https://www.everettpublicschools.org/apps/pages/V1I18" id="accessible-megamenu-1709227457288-6" role="button" aria-controls="accessible-megamenu-1709227457288-7" aria-expanded="false" tabindex="0" class=""><span class="nav-item-inner">District Updates</span></a>
+
+
+          </li>
+
+          <li class="nav-item accessible-megamenu-top-nav-item">
+            <a href="https://www.everettpublicschools.org/apps/pages/V2ISS26" id="accessible-megamenu-1709227457288-8" role="button" aria-controls="accessible-megamenu-1709227457288-9" aria-expanded="false" tabindex="0" class=""><span class="nav-item-inner">Teachers &amp; Staff</span></a>
+
+
+          </li>
+
+          <li class="nav-item accessible-megamenu-top-nav-item">
+            <a href="https://www.everettpublicschools.org/apps/pages/index.jsp?uREC_ID=1618426&type=d&pREC_ID=2495789" id="accessible-megamenu-1709227457288-10" role="button" aria-controls="accessible-megamenu-1709227457288-11" aria-expanded="false" tabindex="0" class=""><span class="nav-item-inner">School Committee</span></a>
+
+
+          </li>
+
+          <li class="nav-item accessible-megamenu-top-nav-item">
+            <a href="https://www.everettpublicschools.org/apps/pages/index.jsp?uREC_ID=2228612&type=d&pREC_ID=1753574" id="accessible-megamenu-1709227457289-12" role="button" aria-controls="accessible-megamenu-1709227457289-13" aria-expanded="false" tabindex="0" class=""><span class="nav-item-inner">Departments</span></a>
+
+
+          </li>
+
+
+          <li class="nav-item accessible-megamenu-top-nav-item">
+            <a href="/floor1" id="accessible-megamenu-1709227457289-14" role="button" aria-controls="accessible-megamenu-1709227457290-15" aria-expanded="false" tabindex="0" class=""><span class="nav-item-inner">School Map</span></a>
+
+
+        </li>
+      </ul>
+    </nav>
+
+    <nav id="topbar_nav" class="header-secondary-nav header-links" aria-labelledby="topbar_nav_header">
+
+      <div class="hidden" id="topbar_nav_header">Useful Links</div>
+      <ul class="links-list">
+
+
+    <li class="link-item item-name"><a href="https://accounts.google.com/AccountChooser/signinchooser?service=mail&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&flowName=GlifWebSignIn&flowEntry=AccountChooser&ec=asw-gmail-globalnav-signin">Gmail Login</a></li>
+
+    <li class="link-item item-name"><a href="https://www.everettpublicschools.org/apps/pages/PIC">Parent Information Center</a></li>
+
+    <li class="link-item item-name"><a href="https://www.everettpublicschools.org/apps/contact/">School Contacts</a></li>
+
+      </ul>
+    </nav>
+
+    <a href="/login" class="edlio-login-link"><span class="edlio-logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 334.98 366.6"><path d="M334.77 247.52c-.63-4.94-5.66-7.44-10.28-6.85a11.59 11.59 0 00-8 5.43c-23.16 29.34-57.2 46.9-92.85 51.44-43.63 5.57-82.93-7.61-109.26-40.05-6.64-9.83-12.76-21-16.33-33.09-.31-2.48.85-3.88 3.5-4.21 40.32-5.15 142.69-29.55 181.19-48.92 24.25-10 30.9-31.58 28.61-49.51C307.5 92 285.64 67 252.41 54.71l15.81-27.57a10 10 0 00-12.12-13L153.99 43.36l-1.53-35.95A6.94 6.94 0 00140.64 2s-71.27 57.93-90.6 91.53L17.28 72.12A9.67 9.67 0 003.19 81.9s-9.76 66.22 4.85 146.51c13.48 74.06 70.35 110.76 70.35 110.76 29.25 21.26 68.12 31.35 112.25 26.03 65.45-8.37 125.8-51.26 144.15-112.64a14.41 14.41 0 00-.02-5.04zm-248.06-53.7c-.79-6.18-1.47-16.77-.94-23.12 2.52-29 16.31-54.89 42-67.64l13.4-5.12a87 87 0 0112.25-2.47c46.28-5.92 76 31.74 78.72 53.37 1.35 10.5-109.91 44.2-139.66 48-3.32.44-5.46-.55-5.77-3.02z"></path></svg>
+  <span class="hidden">Edlio</span></span> Account</a>
   {% load static %}
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-          integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-          crossorigin=""></script>
-  <link rel="stylesheet" type="text/css" href="{% static 'css/EHS.css' %}">
+    <base target="_top">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<a class="skip-to-content-link" href="#content_main">Skip to main content</a>
-  <div class="school-name header-title">
-    <a href="/">
-      <div class="school-name-inner">
-        <span class="first-line"><span class="bolder-line">Everett</span> Public Schools</span>
-      </div>
-    </a>
-  </div>
+      <title>Everett Public School District</title>
 
-  <nav id="sitenav_main" class="sitenav sitenav-main nav-group column" aria-label="Main Site Navigation" role="navigation">
-    <button id="sitenav_main_mobile_toggle" class="nav-mobile-toggle accessible-megamenu-toggle animated" aria-expanded="false" aria-pressed="false" aria-controls="accessible-megamenu-1709227457283-1"><span class="nav-mobile-toggle-inner">Main Menu Toggle</span></button>
-    <ul class="nav-menu accessible-megamenu js-accessible-megamenu" id="accessible-megamenu-1709227457283-1">
+      <link rel="shortcut icon" type="image/png" href="{% static '/images/logo2.png' %}"/>
 
-        <li class="nav-item accessible-megamenu-top-nav-item">
-          <a href="javascript:;" id="accessible-megamenu-1709227457286-2" role="button" aria-controls="accessible-megamenu-1709227457286-3" aria-expanded="false" tabindex="0" class=""><span class="nav-item-inner">Schools</span></a>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 
-
-
-        </li>
-
-        <li class="nav-item accessible-megamenu-top-nav-item">
-          <a href="javascript:;" id="accessible-megamenu-1709227457286-4" role="button" aria-controls="accessible-megamenu-1709227457287-5" aria-expanded="false" tabindex="0" class=""><span class="nav-item-inner">Parents</span></a>
+      <style>
+        html, body {
+          height: 100%;
+          margin: 0;
+        }
+        .leaflet-container {
+          height: 1000px;
+          width: 2000px;
+          max-width: 100%;
+          max-height: 100%;
+        }
+      </style>
 
 
-        <li class="nav-item accessible-megamenu-top-nav-item">
-          <a href="javascript:;" id="accessible-megamenu-1709227457288-6" role="button" aria-controls="accessible-megamenu-1709227457288-7" aria-expanded="false" tabindex="0" class=""><span class="nav-item-inner">District Updates</span></a>
-
-
-        </li>
-
-        <li class="nav-item accessible-megamenu-top-nav-item">
-          <a href="javascript:;" id="accessible-megamenu-1709227457288-8" role="button" aria-controls="accessible-megamenu-1709227457288-9" aria-expanded="false" tabindex="0" class=""><span class="nav-item-inner">Teachers &amp; Staff</span></a>
-
-
-        </li>
-
-        <li class="nav-item accessible-megamenu-top-nav-item">
-          <a href="javascript:;" id="accessible-megamenu-1709227457288-10" role="button" aria-controls="accessible-megamenu-1709227457288-11" aria-expanded="false" tabindex="0" class=""><span class="nav-item-inner">School Committee</span></a>
-
-
-        </li>
-
-        <li class="nav-item accessible-megamenu-top-nav-item">
-          <a href="javascript:;" id="accessible-megamenu-1709227457289-12" role="button" aria-controls="accessible-megamenu-1709227457289-13" aria-expanded="false" tabindex="0" class=""><span class="nav-item-inner">Departments</span></a>
-
-
-        </li>
-
-
-        <li class="nav-item accessible-megamenu-top-nav-item">
-          <a href="javascript:;" id="accessible-megamenu-1709227457289-14" role="button" aria-controls="accessible-megamenu-1709227457290-15" aria-expanded="false" tabindex="0" class=""><span class="nav-item-inner">School Map</span></a>
-
-
-      </li>
-    </ul>
-  </nav>
-
-  <nav id="topbar_nav" class="header-secondary-nav header-links" aria-labelledby="topbar_nav_header">
-
-    <div class="hidden" id="topbar_nav_header">Useful Links</div>
-    <ul class="links-list">
-
-
-  <li class="link-item item-name"><a>Gmail Login</a></li>
-
-  <li class="link-item item-name"><a>Parent Information Center</a></li>
-
-  <li class="link-item item-name"><a>School Contacts</a></li>
-
-    </ul>
-  </nav>
-
-  <a href="/login" class="edlio-login-link"><span class="edlio-logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 334.98 366.6"><path d="M334.77 247.52c-.63-4.94-5.66-7.44-10.28-6.85a11.59 11.59 0 00-8 5.43c-23.16 29.34-57.2 46.9-92.85 51.44-43.63 5.57-82.93-7.61-109.26-40.05-6.64-9.83-12.76-21-16.33-33.09-.31-2.48.85-3.88 3.5-4.21 40.32-5.15 142.69-29.55 181.19-48.92 24.25-10 30.9-31.58 28.61-49.51C307.5 92 285.64 67 252.41 54.71l15.81-27.57a10 10 0 00-12.12-13L153.99 43.36l-1.53-35.95A6.94 6.94 0 00140.64 2s-71.27 57.93-90.6 91.53L17.28 72.12A9.67 9.67 0 003.19 81.9s-9.76 66.22 4.85 146.51c13.48 74.06 70.35 110.76 70.35 110.76 29.25 21.26 68.12 31.35 112.25 26.03 65.45-8.37 125.8-51.26 144.15-112.64a14.41 14.41 0 00-.02-5.04zm-248.06-53.7c-.79-6.18-1.47-16.77-.94-23.12 2.52-29 16.31-54.89 42-67.64l13.4-5.12a87 87 0 0112.25-2.47c46.28-5.92 76 31.74 78.72 53.37 1.35 10.5-109.91 44.2-139.66 48-3.32.44-5.46-.55-5.77-3.02z"></path></svg>
-<span class="hidden">Edlio</span></span> Login</a>
-{% load static %}
-  <base target="_top">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>Everett Public School District</title>
-
-    <link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
-
-      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
-      <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-
-    <style>
-      html, body {
-        height: 100%;
-        margin: 0;
-      }
-      .leaflet-container {
-        height: 1000px;
-        width: 2000px;
-        max-width: 100%;
-        max-height: 100%;
-      }
-    </style>
-
-
-  </header>
+    </header>
 
 <body>
 
@@ -274,7 +274,8 @@ $5580.bindPopup("<b>5580</b><br>Fallon, Christine");
   }
   removeMarkers();
   
-
+  var control = new L.Control.Button()
+  control.addTo(map)
 </script>
 
 
