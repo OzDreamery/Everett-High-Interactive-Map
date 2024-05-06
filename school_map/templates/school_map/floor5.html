@@ -183,98 +183,81 @@ L.Control.Button = L.Control.extend({
 });
 
 
-var DAP1 = "{{ day_a_period_1|default_if_none:'1000' }}"
-var DAP2 = "{{ day_a_period_2|default_if_none:'1000' }}"
-var DAP3 = "{{ day_a_period_3|default_if_none:'1000' }}"
-var DAP4 = "{{ day_a_period_4|default_if_none:'1000' }}"
+  var DAP1 =  "$" + "{{ day_a_period_1|default_if_none:'1000' }}"
+  var DAP2 = "$" + "{{ day_a_period_2|default_if_none:'1000' }}"
+  var DAP3 = "$" + "{{ day_a_period_3|default_if_none:'1000' }}"
+  var DAP4 = "$" + "{{ day_a_period_4|default_if_none:'1000' }}"
 
-var DBP1 = "{{ day_b_period_1|default_if_none:'1000' }}"
-var DBP2 = "{{ day_b_period_2|default_if_none:'1000' }}"
-var DBP3 = "{{ day_b_period_3|default_if_none:'1000' }}"
-var DBP4 = "{{ day_b_period_4|default_if_none:'1000' }}"
+  var DBP1 = "$" + "{{ day_b_period_1|default_if_none:'1000' }}"
+  var DBP2 = "$" + "{{ day_b_period_2|default_if_none:'1000' }}"
+  var DBP3 = "$" + "{{ day_b_period_3|default_if_none:'1000' }}"
+  var DBP4 = "$" + "{{ day_b_period_4|default_if_none:'1000' }}"
 
-var $5450 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
-$5450.bindPopup("<b>5450</b><br>Abboud, Winter");
 
-var $5560 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
-$5560.bindPopup("<b>3640</b><br>Bang, Nhan");
-
-var $5010 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
+var $5010 = L.marker([53.72533536372232, -61.14989467327554]).addTo(map);
 $5010.bindPopup("<b>5010</b><br>Bernard, Aaron<br>English, Richard<br>Kalve, Neeta");
 
-var $5440 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
-$5440.bindPopup("<b>5440</b><br>Pepper, Kimberly");
+var $5440 = L.marker([53.733108774966894, -61.065853305576]).addTo(map);
+$5440.bindPopup("<b>5440</b><br>Pepper, Kimberly<br>McNiff, Chelsea");
 
-var $5590 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
+var $5590 = L.marker([53.71856131885269, -61.0628611206579]).addTo(map);
 $5590.bindPopup("<b>5590</b><br>Pierce, Amanda");
 
-var $5460 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
+var $5460 = L.marker([53.733108774966894, -61.04633905611016]).addTo(map);
 $5460.bindPopup("<b>5460</b><br>St. Juste, Claudy");
 
-var $5470 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
-$5470.bindPopup("<b>5470</b><br>Thekaekara, Carissa");
+var $5470 = L.marker([53.7291068021398, -61.04503810614577]).addTo(map);
+$5470.bindPopup("<b>5470</b><br>Thekaekara, Carissa<br>Jurisic, Nevena");
 
-var $5200 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
+var $5200 = L.marker([53.73434007457846, -61.14703258335386]).addTo(map);
 $5200.bindPopup("<b>5200</b><br>Vamos, Garnett");
 
-var $5600 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
+var $5600 = L.marker([53.7265668910143, -61.06546302058666]).addTo(map);
 $5600.bindPopup("<b>5600</b><br>Venezia, Therese");
 
-var $5480 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
+var $5480 = L.marker([53.733108774966894, -61.04607886611727]).addTo(map);
 $5480.bindPopup("<b>5480</b><br>Walsh, Bryan");
 
-var $5450 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
-$5450.bindPopup("<b>5450</b><br>Lipper, Dana (CHA)");
+var $5450 = L.marker([53.72918376674842, -61.06598340057243]).addTo(map);
+$5450.bindPopup("<b>5450</b><br>Lipper, Dana (CHA)<br>Abboud, Winter");
 
-var $5430 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
+var $5430 = L.marker([53.733339646391315, -61.083416130095245]).addTo(map);
 $5430.bindPopup("<b>5430</b><br>Lomas, Susan");
 
-var $5440 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
-$5440.bindPopup("<b>5440</b><br>McNiff, Chelsea");
+var $5510 = L.marker([53.726335982394545, -61.043607061184936]).addTo(map);
+$5510.bindPopup("<b>5510</b><br>Mezoff, Charlotte<br>Erle, John");
 
-var $5510 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
-$5510.bindPopup("<b>5510</b><br>Mezoff, Charlotte");
+var $5560 = L.marker([53.71894623700356, -61.041135256252595]).addTo(map);
+$5560.bindPopup("<b>5560</b><br>Nilson, Sandra<br>Bang, Nhan");
 
-var $5560 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
-$5560.bindPopup("<b>5560</b><br>Nilson, Sandra");
-
-var $5307 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
+var $5307 = L.marker([53.72879894229644, -61.1033206645504]).addTo(map);
 $5307.bindPopup("<b>5307</b><br>ODonnell, Alexander");
 
-var $5400 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
-$5400.bindPopup("<b>5400</b><br>Peary, Desirae");
+var $5400 = L.marker([553.733262689390735, -61.10006828963943]).addTo(map);
+$5400.bindPopup("<b>5400</b><br>Peary, Desirae<br>Eford, Lisa");
 
-var $5530 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
+var $5530 = L.marker([53.72402682645259, -61.02825585160514]).addTo(map);
 $5530.bindPopup("<b>5530</b><br>Persuitte, Domenick");
 
-var $5550 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
+var $5550 = L.marker([53.7178684573039, -61.02552385667993]).addTo(map);
 $5550.bindPopup("<b>5550</b><br>Fleury, Staci");
 
-var $5570 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
+var $5570 = L.marker([53.723795903883904, -61.04269639620987]).addTo(map);
 $5570.bindPopup("<b>5570</b><br>Hahesy, Brendan");
 
-var $5520 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
+var $5520 = L.marker([53.72764444780652, -61.029816991562406]).addTo(map);
 $5520.bindPopup("<b>5520</b><br>Judd (Pickowicz), Amanda");
 
-var $5470 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
-$5470.bindPopup("<b>5470</b><br>Jurisic, Nevena");
-
-var $5465 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
+var $5465 = L.marker([53.72895287249993, -61.055185515868]).addTo(map);
 $5465.bindPopup("<b>5465</b><br>Cunningham, Janice");
 
-var $5540 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
-$5540.bindPopup("<b>5470</b><br>DiMare, Debra");
+var $5540 = L.marker([53.72094775460232, -61.027215091633636]).addTo(map);
+$5540.bindPopup("<b>5540</b><br>DiMare, Debra");
 
-var $5500 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
+var $5500 = L.marker([53.730646067542594, -61.030987846530365]).addTo(map);
 $5500.bindPopup("<b>5500</b><br>Dunn, Riley");
 
-var $5400 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
-$5400.bindPopup("<b>5400</b><br>Eford, Lisa");
-
-var $5510 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
-$5510.bindPopup("<b>5510</b><br>Erle, John");
-
-var $5580 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
+var $5580 = L.marker([53.71863830276469, -61.062340740672134]).addTo(map);
 $5580.bindPopup("<b>5580</b><br>Fallon, Christine");
 
 
@@ -291,13 +274,6 @@ $5580.bindPopup("<b>5580</b><br>Fallon, Christine");
   }
   removeMarkers();
   
-var control = new L.Control.Button()
-control.addTo(map)
-
-  map.on('click', function(e) {
-      alert("Lat, Lon : " + e.latlng.lat + ", " + e.latlng.lng)
-  });
-
 
 </script>
 

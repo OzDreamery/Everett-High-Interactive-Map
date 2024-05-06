@@ -199,7 +199,7 @@ $2540.bindPopup("<b>2540</b><br>Andreotti, Christine<br>Wright, Nicole<br>Korb, 
 var $2430 = L.marker([53.73580219602319, -61.08068413517003]).addTo(map);
 $2430.bindPopup("<b>2430</b><br>Bittermann, Sarah");
 
-var $2615 = L.marker([53.727105672862365, -61.048550671049625).addTo(map);
+var $2615 = L.marker([53.727105672862365, -61.048550671049625]).addTo(map);
 $2615.bindPopup("<b>2615</b><br>Blake, Steven");
 
 var $2620 = L.marker([53.72010097031994, -61.05843789077897]).addTo(map);
@@ -298,14 +298,8 @@ function removeMarkers() {
     }
   }
 }
-removeMarkers();
+  removeMarkers();
 
-var control = new L.Control.Button()
-control.addTo(map)
-
-  map.on('click', function(e) {
-      alert("Lat, Lon : " + e.latlng.lat + ", " + e.latlng.lng)
-  });
 
 </script>
 

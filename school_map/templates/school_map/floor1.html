@@ -237,13 +237,6 @@ var DBP4 = "$" + "{{ day_b_period_4|default_if_none:'1000' }}"
   }
   removeMarkers();
 
-  
-var control = new L.Control.Button()
-control.addTo(map)
-
-  map.on('click', function(e) {
-      alert("Lat, Lon : " + e.latlng.lat + ", " + e.latlng.lng)
-  });
 
 </script>
 

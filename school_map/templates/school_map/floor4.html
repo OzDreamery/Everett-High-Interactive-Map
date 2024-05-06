@@ -182,26 +182,26 @@ L.Control.Button = L.Control.extend({
     onRemove: function(map) {},
 });
 
-var DAP1 = "{{ day_a_period_1|default_if_none:'1000' }}"
-var DAP2 = "{{ day_a_period_2|default_if_none:'1000' }}"
-var DAP3 = "{{ day_a_period_3|default_if_none:'1000' }}"
-var DAP4 = "{{ day_a_period_4|default_if_none:'1000' }}"
+var DAP1 = "$" + "{{ day_a_period_1|default_if_none:'1000' }}"
+var DAP2 = "$" + "{{ day_a_period_2|default_if_none:'1000' }}"
+var DAP3 = "$" + "{{ day_a_period_3|default_if_none:'1000' }}"
+var DAP4 = "$" + "{{ day_a_period_4|default_if_none:'1000' }}"
 
-var DBP1 = "{{ day_b_period_1|default_if_none:'1000' }}"
-var DBP2 = "{{ day_b_period_2|default_if_none:'1000' }}"
-var DBP3 = "{{ day_b_period_3|default_if_none:'1000' }}"
-var DBP4 = "{{ day_b_period_4|default_if_none:'1000' }}"
+var DBP1 = "$" + "{{ day_b_period_1|default_if_none:'1000' }}"
+var DBP2 = "$" + "{{ day_b_period_2|default_if_none:'1000' }}"
+var DBP3 = "$" + "{{ day_b_period_3|default_if_none:'1000' }}"
+var DBP4 = "$" + "{{ day_b_period_4|default_if_none:'1000' }}"
 
-var $4440 = L.marker([55.71328272252383, -59.98879683005819]).addTo(map);
+var $4440 = L.marker([53.73441702960667, -61.078732710223434]).addTo(map);
 $4440.bindPopup("<b>4440</b><br>Alphonse, Christine<br>Callahan, Timothy");
 
-var $4510 = L.marker([55.71328272252383, -59.98879683005819]).addTo(map);
+var $4510 = L.marker([53.735032664760425, -61.02591414166923]).addTo(map);
 $4510.bindPopup("<b>4510</b><br>Bailey, Wayne");
 
-var $4590 = L.marker([55.71328272252383, -59.98879683005819]).addTo(map);
+var $4590 = L.marker([53.71817639717913, -61.03554117140573]).addTo(map);
 $4590.bindPopup("<b>4590</b><br>Bavaro, Jamie");
 
-var $4580 = L.marker([55.71328272252383, -59.98879683005819]).addTo(map);
+var $4580 = L.marker([53.7174835292894, -61.01992977183306]).addTo(map);
 $4580.bindPopup("<b>4580</b><br>Bertocchi, William");
 
 var $4550 = L.marker([55.71328272252383, -59.98879683005819]).addTo(map);
@@ -262,18 +262,19 @@ var $4200 = L.marker([55.71328272252383, -59.98879683005819]).addTo(map);
 $4200.bindPopup("<b>4430</b><br>Troyanovsky, Rachel<br>Love, Malik<br>Miller, Christopher<br>Levine, Joel<br>Gli, Amanda<br>Gardella, Richard<br>Gallagher, Steven<br>Gallagher, DeAnn<br>Figaro, Lucina");
 
 
-  var classesPeriod = [DAP1, DAP2, DAP3, DAP4, DBP1, DBP2, DBP3, DBP4];
-  function removeMarkers() {
-      for (var markerVar in window) {
-          if (markerVar.startsWith('$') && typeof window[markerVar] === 'object' && window[markerVar] instanceof L.Marker) {
-              var markerId = markerVar.substring(1); 
-              if (!classesPeriod.includes("$" + markerId)) {
-                  map.removeLayer(window[markerVar]); 
-              }
-          }
+var classesPeriod = [DAP1, DAP2, DAP3, DAP4, DBP1, DBP2, DBP3, DBP4];
+function removeMarkers() {
+  for (var markerVar in window) {
+    if (markerVar.startsWith('$') && typeof window[markerVar] === 'object' && window[markerVar] instanceof L.Marker) {
+      var markerId = markerVar.substring(1); 
+      if (!classesPeriod.includes("$" + markerId)) {
+        map.removeLayer(window[markerVar]); 
       }
+    }
   }
-  removeMarkers();
+}
+  
+removeMarkers();
   
 var control = new L.Control.Button()
 control.addTo(map)
