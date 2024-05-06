@@ -85,9 +85,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Image Overlay Tutorial - Leaflet</title>
+    <title>Everett Public School District</title>
 
-    <link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
+    <link rel="shortcut icon" type="image/png" href="{% static '/images/logo2.png' %}"/>
 
       <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
       <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
@@ -111,6 +111,7 @@
 <body>
 
 <div id='map'></div>
+  
 
 <script>
   const map = L.map('map').setView([50.7105839, -34.7523184], 40);
@@ -181,7 +182,7 @@ L.Control.Button = L.Control.extend({
     },
     onRemove: function(map) {},
 });
-  
+
 var DAP1 =  "$" + "{{ day_a_period_1|default_if_none:'1000' }}"
 var DAP2 = "$" + "{{ day_a_period_2|default_if_none:'1000' }}"
 var DAP3 = "$" + "{{ day_a_period_3|default_if_none:'1000' }}"
@@ -192,17 +193,16 @@ var DBP2 = "$" + "{{ day_b_period_2|default_if_none:'1000' }}"
 var DBP3 = "$" + "{{ day_b_period_3|default_if_none:'1000' }}"
 var DBP4 = "$" + "{{ day_b_period_4|default_if_none:'1000' }}"
 
-  '''
-  var $1604 = L.marker([55.70822559204664, -60.0409649236302]).addTo(map);
+  var $1604 = L.marker([55.72112364477874, -59.987625975090225]).addTo(map);
   $1604.bindPopup("<b>1604</b><br>Chase, Christopher<br>Munoz, Michael");
 
-  var $1609 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
+  var $1609 = L.marker([55.73028160733186, -60.02288171912517]).addTo(map);
   $1609.bindPopup("<b>1609</b><br>Cangiano, Paul<br>Brooks, Francis");
 
-  var $1611 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
+  var $1611 = L.marker([55.72859670346612, -60.0369319787406]).addTo(map);
   $1611.bindPopup("<b>1611</b><br>Sullivan, Siobhan");
 
-  var $1407 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
+  var $1407 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map); ///AAAAAAA
   $1407.bindPopup("<b>1407</b><br>McLaughlin, Joseph");
 
   var $1100 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
@@ -223,8 +223,7 @@ var DBP4 = "$" + "{{ day_b_period_4|default_if_none:'1000' }}"
   var $1606 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
   $1606.bindPopup("<b>1606</b><br>DeFilippo, Ashley<br>Farrell, Robert");
 
-  '''
-
+  
   var classesPeriod = [DAP1, DAP2, DAP3, DAP4, DBP1, DBP2, DBP3, DBP4];
   function removeMarkers() {
       for (var markerVar in window) {
@@ -237,6 +236,8 @@ var DBP4 = "$" + "{{ day_b_period_4|default_if_none:'1000' }}"
       }
   }
   removeMarkers();
+
+  
 var control = new L.Control.Button()
 control.addTo(map)
 

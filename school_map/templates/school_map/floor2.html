@@ -85,7 +85,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Image Overlay Tutorial - Leaflet</title>
+  <title>Everett Public School District</title>
 
     <link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
 
@@ -182,43 +182,31 @@ L.Control.Button = L.Control.extend({
     onRemove: function(map) {},
 });
 
-var DAP1 = "{{ day_a_period_1|default_if_none:'1000' }}"
-var DAP2 = "{{ day_a_period_2|default_if_none:'1000' }}"
-var DAP3 = "{{ day_a_period_3|default_if_none:'1000' }}"
-var DAP4 = "{{ day_a_period_4|default_if_none:'1000' }}"
+  var DAP1 =  "$" + "{{ day_a_period_1|default_if_none:'1000' }}"
+  var DAP2 = "$" + "{{ day_a_period_2|default_if_none:'1000' }}"
+  var DAP3 = "$" + "{{ day_a_period_3|default_if_none:'1000' }}"
+  var DAP4 = "$" + "{{ day_a_period_4|default_if_none:'1000' }}"
 
-var DBP1 = "{{ day_b_period_1|default_if_none:'1000' }}"
-var DBP2 = "{{ day_b_period_2|default_if_none:'1000' }}"
-var DBP3 = "{{ day_b_period_3|default_if_none:'1000' }}"
-var DBP4 = "{{ day_b_period_4|default_if_none:'1000' }}"
+  var DBP1 = "$" + "{{ day_b_period_1|default_if_none:'1000' }}"
+  var DBP2 = "$" + "{{ day_b_period_2|default_if_none:'1000' }}"
+  var DBP3 = "$" + "{{ day_b_period_3|default_if_none:'1000' }}"
+  var DBP4 = "$" + "{{ day_b_period_4|default_if_none:'1000' }}"
 
-'''
-var $2540 = L.marker([55.71328272252383, -59.98879683005819]).addTo(map);
-$2540.bindPopup("<b>2540</b><br>Andreotti, Christine");
 
-var $2480 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
-$2480.bindPopup("<b>2480</b><br>Appleby, Patrick");
+var $2540 = L.marker([55.72859670346612, -60.00714022455607]).addTo(map);
+$2540.bindPopup("<b>2540</b><br>Andreotti, Christine<br>Wright, Nicole<br>Korb, Emily");
 
-var $2430 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
+var $2430 = L.marker([55.725373206497835, -60.03419998381536]).addTo(map);
 $2430.bindPopup("<b>2430</b><br>Bittermann, Sarah");
 
-var $2615 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
+var $2615 = L.marker([55.72713151056238, -60.019629344214195]).addTo(map);
 $2615.bindPopup("<b>2615</b><br>Blake, Steven");
 
-var $2620 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
+var $2620 = L.marker([55.721783089840464, -60.030427228918626]).addTo(map);
 $2620.bindPopup("<b>2620</b><br>Brown, Edward");
 
-var $2420 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
+var $2420 = L.marker([55.73518939112541, -60.067634397900164]).addTo(map);
 $2420.bindPopup("<b>2420</b><br>Cheever, Corey");
-
-var $2700 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
-$2700.bindPopup("<b>2700</b><br>Clifford, Kayla");
-
-var $2280 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
-$2280.bindPopup("<b>2280</b><br>Reczek, Andrea");
-
-var $2300 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
-$2300.bindPopup("<b>2300</b><br>Redmond, Timothy");
 
 var $2720 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
 $2720.bindPopup("<b>2720</b><br>Seiders, Anna");
@@ -226,29 +214,20 @@ $2720.bindPopup("<b>2720</b><br>Seiders, Anna");
 var $2290 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
 $2290.bindPopup("<b>2290</b><br>Peach, David");
 
-var $2610 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
-$2610.bindPopup("<b>2610</b><br>Simmons, Sarah");
-
-var $2410 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
-$2410.bindPopup("<b>2410</b><br>Smith, Brendan");
-
 var $2280 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
-$2280.bindPopup("<b>2280</b><br>Soulouque, Sophonie");
+$2280.bindPopup("<b>2280</b><br>Soulouque, Sophonie<br>Reczek, Andrea");
 
 var $2480 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
-$2480.bindPopup("<b>2480</b><br>Toomajian, Kirk");
+$2480.bindPopup("<b>2480</b><br>Toomajian, Kirk<br>Appleby, Patrick");
 
 var $2560 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
 $2560.bindPopup("<b>2560</b><br>Tran, Tuyet Julie");
-
-var $2450 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
-$2450.bindPopup("<b>2450</b><br>Lopes, Manuel");
 
 var $2400 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
 $2400.bindPopup("<b>2400</b><br>Maldonado, Monica");
 
 var $2510 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
-$2510.bindPopup("<b>2510</b><br>McDonald, Joseph");
+$2510.bindPopup("<b>2510</b><br>McDonald, Joseph<br>Glaeser, John");
 
 var $2600 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
 $2600.bindPopup("<b>2600</b><br>McDonough, Thomas<br>Gerace, Mary<br>Clifford, Michael");
@@ -258,9 +237,6 @@ $2550.bindPopup("<b>2550</b><br>Messina, Michael");
 
 var $2590 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
 $2590.bindPopup("<b>2590</b><br>Morrissey, Sarah");
-
-var $2510 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
-$2510.bindPopup("<b>2510</b><br>Glaeser, John");
 
 var $2640 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
 $2640.bindPopup("<b>2640</b><br>Gould, Emily");
@@ -272,13 +248,10 @@ var $2250 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
 $2250.bindPopup("<b>2250</b><br>Jones, Nicola");
 
 var $2410 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
-$2410.bindPopup("<b>2410</b><br>Klein, Brett");
+$2410.bindPopup("<b>2410</b><br>Klein, Brett<br>Smith Brendan");
 
 var $2610 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
-$2610.bindPopup("<b>2610</b><br>Korb, Emily");
-
-var $2540 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
-$2540.bindPopup("<b>2540</b><br>Korb, Emily");
+$2610.bindPopup("<b>2610</b><br>Korb, Emily<br>Simmons, Sarah");
 
 var $2710 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
 $2710.bindPopup("<b>2710</b><br>Kretas, Stephanie");
@@ -287,10 +260,10 @@ var $2570 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
 $2570.bindPopup("<b>2570</b><br>LeGrow, Robert");
 
 var $2450 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
-$2450.bindPopup("<b>2450</b><br>Leite, Antonio");
+$2450.bindPopup("<b>2450</b><br>Leite, Antonio<br>Lopes, Manuel");
 
 var $2300 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
-$2300.bindPopup("<b>2300</b><br>Constanza, Oswaldo");
+$2300.bindPopup("<b>2300</b><br>Constanza, Oswaldo<br>Redmond, Timothy");
 
 var $2210 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
 $2210.bindPopup("<b>2210</b><br>Cummings, Judith");
@@ -305,15 +278,14 @@ var $2520 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
 $2520.bindPopup("<b>2520</b><br>Faison, Latisha");
 
 var $2700 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
-$2700.bindPopup("<b>2700</b><br>Fineran, Michael");
+$2700.bindPopup("<b>2700</b><br>Fineran, Michael<br>Clifford, Kayla");
 
 var $2490 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
 $2490.bindPopup("<b>2490</b><br>Wright, Christopher");
 
-var $2540 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
-$2540.bindPopup("<b>2540</b><br>Wright, Nicole");
+
   
-'''
+
 
   var classesPeriod = [DAP1, DAP2, DAP3, DAP4, DBP1, DBP2, DBP3, DBP4];
   function removeMarkers() {
