@@ -85,7 +85,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Everett Public School District</title>
+    <title>Image Overlay Tutorial - Leaflet</title>
 
     <link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
 
@@ -183,15 +183,15 @@ L.Control.Button = L.Control.extend({
 });
 
 
-  var DAP1 =  "$" + "{{ day_a_period_1|default_if_none:'1000' }}"
-  var DAP2 = "$" + "{{ day_a_period_2|default_if_none:'1000' }}"
-  var DAP3 = "$" + "{{ day_a_period_3|default_if_none:'1000' }}"
-  var DAP4 = "$" + "{{ day_a_period_4|default_if_none:'1000' }}"
+var DAP1 = "{{ day_a_period_1|default_if_none:'1000' }}"
+var DAP2 = "{{ day_a_period_2|default_if_none:'1000' }}"
+var DAP3 = "{{ day_a_period_3|default_if_none:'1000' }}"
+var DAP4 = "{{ day_a_period_4|default_if_none:'1000' }}"
 
-  var DBP1 = "$" + "{{ day_b_period_1|default_if_none:'1000' }}"
-  var DBP2 = "$" + "{{ day_b_period_2|default_if_none:'1000' }}"
-  var DBP3 = "$" + "{{ day_b_period_3|default_if_none:'1000' }}"
-  var DBP4 = "$" + "{{ day_b_period_4|default_if_none:'1000' }}"
+var DBP1 = "{{ day_b_period_1|default_if_none:'1000' }}"
+var DBP2 = "{{ day_b_period_2|default_if_none:'1000' }}"
+var DBP3 = "{{ day_b_period_3|default_if_none:'1000' }}"
+var DBP4 = "{{ day_b_period_4|default_if_none:'1000' }}"
 
 '''
 var $5450 = L.marker([55.72310194655825, -59.98866673506174]).addTo(map);
