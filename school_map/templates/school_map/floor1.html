@@ -114,7 +114,7 @@
   
 
 <script>
-  const map = L.map('map').setView([50.7105839, -34.7523184], 40);
+  const map = L.map('map').setView([40.7105839, -34.7523184], 40);
 
   const osm = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 16,
@@ -125,7 +125,7 @@
   var imageUrl = '{% static '/images/one.png' %}';
   const errorOverlayUrl = 'https://cdn-icons-png.flaticon.com/512/110/110686.png';
   const altText = 'Floor 1';
-  const latLngBounds = L.latLngBounds([[55.7, -60.19999999], [55.753, -59.9499999]]);
+  const latLngBounds = L.latLngBounds([[53.7, -61.19999999], [53.753, -60.99999999]]);
 
   const imageOverlay = L.imageOverlay(imageUrl, latLngBounds, {
     opacity: 1,
