@@ -62,9 +62,6 @@ def room_input(request):
   if request.method == 'POST':
      
       room_input, created = RoomInput.objects.get_or_create(user=request.user)
-
-      
-      room_input.grade_level = request.POST.get('grade_level')
       room_input.day_a_period_1 = request.POST.get('day_a_period_1', 1000)
       room_input.day_a_period_2 = request.POST.get('day_a_period_2', 1000)
       room_input.day_a_period_3 = request.POST.get('day_a_period_3', 1000)
