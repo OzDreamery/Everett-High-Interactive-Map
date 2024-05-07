@@ -82,8 +82,13 @@
         <form method="post">
             {% csrf_token %}
             <div class="form-group">
-                <label>Day A - Period 1:</label>
-                <input type="number" name="day_a_period_1" value="{{ day_a_period_1|default_if_none:'1000' }}" required>
+                <label>Grade Level:</label>
+                <select name="grade_level" required>
+                    <option value="9" {% if grade_level == "9" %} selected {% endif %}>9</option>
+                    <option value="10" {% if grade_level == "10" %} selected {% endif %}>10</option>
+                    <option value="11" {% if grade_level == "11" %} selected {% endif %}>11</option>
+                    <option value="12" {% if grade_level == "12" %} selected {% endif %}>12</option>
+                </select>
             </div>
             <div class="form-group">
                 <label>Day A - Period 2:</label>

@@ -192,6 +192,8 @@ var DBP2 = "$" + "{{ day_b_period_2|default_if_none:'1000' }}"
 var DBP3 = "$" + "{{ day_b_period_3|default_if_none:'1000' }}"
 var DBP4 = "$" + "{{ day_b_period_4|default_if_none:'1000' }}"
 
+var grade = "{{ grade_level|default_if_none:'9' }}"
+
   var $1604 = L.marker([53.71702161102195, -61.02604423666569]).addTo(map);
   $1604.bindPopup("<b>1604</b><br>Chase, Christopher<br>Munoz, Michael");
 
@@ -251,11 +253,33 @@ var iconOptions2 = L.icon({
 })
 
 var guidance = L.marker([53.71856131885269, -61.051152570978395], {icon: iconOptions2}).addTo(map);
-guidance.bindPopup("<b>Guidance</b>");
+  
+function getGrade(grade){
+  if(grade == "9"){
+    guidance.bindPopup("<b>Guidance</b><br>Andrade, Fernanda<br>Kacvinsky, Maureen");
+  }
+  else if(grade == "10"){
+    guidance.bindPopup("<b>Guidance</b><br>Kosnar, Deborah<br>Coleman, Phil");
+  }
+  else if(grade == "11"){
+    guidance.bindPopup("<b>Guidance</b><br>Walls, Sashae<br>Arsenault, Raymond");
+  }
+  else if(grade == "12"){
+    guidance.bindPopup("<b>Guidance</b><br>Linehan, Amelia<br>Buonopane, Kelley");
+  }
+}
+
+getGrade(grade);
+
 
 var control = new L.Control.Button()
 control.addTo(map)
 
+  map.on('click', function(e) {
+      alert("Lat, Lon : " + grade + ", " + e.latlng.lng)
+  });
+
+  
 </script>
 
 

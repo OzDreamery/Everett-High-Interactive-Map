@@ -6,7 +6,7 @@ from . import views
 
 app_name = 'school_map'
 urlpatterns = [
-    # Home page
+  
     path('', views.authentication, name='authentication'),
     path('floor1/', views.floor1, name='floor1'),
     path('floor2/', views.floor2, name='floor2'),
