@@ -302,6 +302,20 @@ function removeMarkers() {
 
   var control = new L.Control.Button()
   control.addTo(map)
+
+
+  var iconOptions3 = L.icon({
+    iconUrl: '{% static '/images/stage.png' %}',
+    iconSize: [43, 43],
+  })
+
+  var stage = L.marker([53.72918376674842, -61.094344109796126], {icon: iconOptions3}).addTo(map);
+  stage.bindPopup("<b>Auditorium</b>");
+
+  map.on('click', function(e) {
+      alert("Lat, Lon : " + e.latlng.lat + ", " + e.latlng.lng)
+  });
+
 </script>
 
 

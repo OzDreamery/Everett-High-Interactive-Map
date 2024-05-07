@@ -77,17 +77,16 @@
 
     </ul>
   </nav>
-
-  <a href="/login" class="edlio-login-link"><span class="edlio-logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 334.98 366.6"><path d="M334.77 247.52c-.63-4.94-5.66-7.44-10.28-6.85a11.59 11.59 0 00-8 5.43c-23.16 29.34-57.2 46.9-92.85 51.44-43.63 5.57-82.93-7.61-109.26-40.05-6.64-9.83-12.76-21-16.33-33.09-.31-2.48.85-3.88 3.5-4.21 40.32-5.15 142.69-29.55 181.19-48.92 24.25-10 30.9-31.58 28.61-49.51C307.5 92 285.64 67 252.41 54.71l15.81-27.57a10 10 0 00-12.12-13L153.99 43.36l-1.53-35.95A6.94 6.94 0 00140.64 2s-71.27 57.93-90.6 91.53L17.28 72.12A9.67 9.67 0 003.19 81.9s-9.76 66.22 4.85 146.51c13.48 74.06 70.35 110.76 70.35 110.76 29.25 21.26 68.12 31.35 112.25 26.03 65.45-8.37 125.8-51.26 144.15-112.64a14.41 14.41 0 00-.02-5.04zm-248.06-53.7c-.79-6.18-1.47-16.77-.94-23.12 2.52-29 16.31-54.89 42-67.64l13.4-5.12a87 87 0 0112.25-2.47c46.28-5.92 76 31.74 78.72 53.37 1.35 10.5-109.91 44.2-139.66 48-3.32.44-5.46-.55-5.77-3.02z"></path></svg>
-<span class="hidden">Edlio</span></span> Account</a>
 {% load static %}
+    <a href="/login" class="edlio-login-link"><span class="edlio-logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 334.98 366.6"><path d="M334.77 247.52c-.63-4.94-5.66-7.44-10.28-6.85a11.59 11.59 0 00-8 5.43c-23.16 29.34-57.2 46.9-92.85 51.44-43.63 5.57-82.93-7.61-109.26-40.05-6.64-9.83-12.76-21-16.33-33.09-.31-2.48.85-3.88 3.5-4.21 40.32-5.15 142.69-29.55 181.19-48.92 24.25-10 30.9-31.58 28.61-49.51C307.5 92 285.64 67 252.41 54.71l15.81-27.57a10 10 0 00-12.12-13L153.99 43.36l-1.53-35.95A6.94 6.94 0 00140.64 2s-71.27 57.93-90.6 91.53L17.28 72.12A9.67 9.67 0 003.19 81.9s-9.76 66.22 4.85 146.51c13.48 74.06 70.35 110.76 70.35 110.76 29.25 21.26 68.12 31.35 112.25 26.03 65.45-8.37 125.8-51.26 144.15-112.64a14.41 14.41 0 00-.02-5.04zm-248.06-53.7c-.79-6.18-1.47-16.77-.94-23.12 2.52-29 16.31-54.89 42-67.64l13.4-5.12a87 87 0 0112.25-2.47c46.28-5.92 76 31.74 78.72 53.37 1.35 10.5-109.91 44.2-139.66 48-3.32.44-5.46-.55-5.77-3.02z"></path></svg>
+<span class="hidden">Edlio</span></span> Account</a>
   <base target="_top">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Everett Public School District</title>
 
-    <link rel="shortcut icon" type="image/png" href="{% static '/images/logo2.png' %}"/>
+    <link rel="shortcut icon" type="image/png" href="{% static '/images/tide.png' %}"/>
 
       <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
       <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
@@ -237,7 +236,23 @@ var DBP4 = "$" + "{{ day_b_period_4|default_if_none:'1000' }}"
   }
   removeMarkers();
 
-  
+
+var iconOptions = L.icon({
+  iconUrl: '{% static '/images/nurse.png' %}',
+  iconSize: [43, 43],
+})
+
+var nurse = L.marker([53.73180047961096, -61.115679689212094], {icon: iconOptions}).addTo(map);
+nurse.bindPopup("<b>Nurse</b>");
+
+var iconOptions2 = L.icon({
+  iconUrl: '{% static '/images/guidance.png' %}',
+  iconSize: [42, 42],
+})
+
+var guidance = L.marker([53.71856131885269, -61.051152570978395], {icon: iconOptions2}).addTo(map);
+guidance.bindPopup("<b>Guidance</b>");
+
 var control = new L.Control.Button()
 control.addTo(map)
 
