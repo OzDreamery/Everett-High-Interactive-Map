@@ -90,7 +90,6 @@ def room_input(request):
 
     
       default_values = {
-          'grade_level': room_input.grade_level,
           'day_a_period_1': room_input.day_a_period_1,
           'day_a_period_2': room_input.day_a_period_2,
           'day_a_period_3': room_input.day_a_period_3,
@@ -115,7 +114,6 @@ def floor1(request):
 
  
   context = {
-      'grade_level': room_input.grade_level,
       'day_a_period_1': room_input.day_a_period_1,
       'day_a_period_2': room_input.day_a_period_2,
       'day_a_period_3': room_input.day_a_period_3,
