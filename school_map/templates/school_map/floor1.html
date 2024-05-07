@@ -254,6 +254,14 @@ var iconOptions2 = L.icon({
 
 var guidance = L.marker([53.71856131885269, -61.051152570978395], {icon: iconOptions2}).addTo(map);
 guidance.bindPopup("<b>Guidance</b>");
+
+var iconOptions8 = L.icon({
+  iconUrl: '{% static '/images/office.png' %}',
+  iconSize: [50, 50],
+})
+
+var office = L.marker([53.71817639717913, -61.096555724735566], {icon: iconOptions8}).addTo(map);
+office.bindPopup("<b>Main Office</b>");
   
 var control = new L.Control.Button()
 control.addTo(map)
