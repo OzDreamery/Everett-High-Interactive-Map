@@ -217,7 +217,12 @@ $3680.bindPopup("<b>3680</b><br>Podbelski, Nathan");
 var $3480 = L.marker([53.74080380583613, -61.06325140564721]).addTo(map);
 $3480.bindPopup("<b>3480</b><br>Rowlinson, Ryan<br>Aquino, John");
 
-var $3310 = L.marker([53.73257007004551, -61.15731008807256]).addTo(map);
+var iconOptions5 = L.icon({
+  iconUrl: '{% static '/images/band.png' %}',
+  iconSize: [43, 43],
+})
+
+var $3310 = L.marker([53.73257007004551, -61.15731008807256], {icon: iconOptions5}).addTo(map);
 $3310.bindPopup("<b>3310</b><br>Sachetta, Mark");
 
 var $3550 = L.marker([53.73618695637147, -61.0230520517476]).addTo(map);
