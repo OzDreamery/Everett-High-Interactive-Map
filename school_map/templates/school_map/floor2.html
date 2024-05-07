@@ -206,7 +206,7 @@ var $2620 = L.marker([53.72010097031994, -61.05843789077897]).addTo(map);
 $2620.bindPopup("<b>2620</b><br>Brown, Edward");
 
 var $2420 = L.marker([53.735648290897686, -61.09603534474983]).addTo(map);
-$2420.bindPopup("<b>2420</b><br>Cheever, Corey");
+$2420.bindPopup("<b>2420</b><br>Cheever, Corey<br>Plotnick, Neil");
 
 var $2720 = L.marker([53.71979304453554, -61.0979867696964]).addTo(map);
 $2720.bindPopup("<b>2720</b><br>Seiders, Anna");
@@ -311,10 +311,6 @@ function removeMarkers() {
 
   var stage = L.marker([53.72918376674842, -61.094344109796126], {icon: iconOptions3}).addTo(map);
   stage.bindPopup("<b>Auditorium</b>");
-
-  map.on('click', function(e) {
-      alert("Lat, Lon : " + e.latlng.lat + ", " + e.latlng.lng)
-  });
 
 </script>
 

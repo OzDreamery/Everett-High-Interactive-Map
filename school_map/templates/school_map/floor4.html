@@ -255,9 +255,14 @@ $4540.bindPopup("<b>4540</b><br>Ruka, Ida");
 var $4430 = L.marker([53.727105672862365, -61.060519410721994]).addTo(map);
 $4430.bindPopup("<b>4430</b><br>Waterman, Shawn");
 
-var $4200 = L.marker([53.72764444780652, -61.14924419829334]).addTo(map);
-$4200.bindPopup("<b>4430</b><br>Troyanovsky, Rachel<br>Love, Malik<br>Miller, Christopher<br>Levine, Joel<br>Gli, Amanda<br>Gardella, Richard<br>Gallagher, Steven<br>Gallagher, DeAnn<br>Figaro, Lucina");
 
+var iconOptions4 = L.icon({
+  iconUrl: '{% static '/images/gym.png' %}',
+  iconSize: [63, 63],
+})
+
+var $4200 = L.marker([53.72764444780652, -61.14924419829334], {icon: iconOptions4}).addTo(map);
+$4200.bindPopup("<b>4200</b><br>Troyanovsky, Rachel<br>Love, Malik<br>Miller, Christopher<br>Levine, Joel<br>Gli, Amanda<br>Gardella, Richard<br>Gallagher, Steven<br>Gallagher, DeAnn<br>Figaro, Lucina");
 
 var classesPeriod = [DAP1, DAP2, DAP3, DAP4, DBP1, DBP2, DBP3, DBP4];
 function removeMarkers() {
@@ -276,10 +281,6 @@ removeMarkers();
 var control = new L.Control.Button()
 control.addTo(map)
 
-  map.on('click', function(e) {
-      alert("Lat, Lon : " + e.latlng.lat + ", " + e.latlng.lng)
-  });
-  
 </script>
 
 
